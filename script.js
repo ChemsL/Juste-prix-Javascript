@@ -52,13 +52,8 @@ let imgArray = [
 "img5.png",
 ]
 
-
-function getRandomImg(){
-  randomIndex = Math.floor(Math.random()*imgArray.length)
-
+function getRandomImg() {
+  randomIndex = Math.floor(Math.random() * imgArray.length)
   selectImg = imgArray[randomIndex]
-
-  document.getElementById('photo').src = `image-juste-prix/${selectImg}`
+  document.getElementById('photo').innerHTML = `<img src="A7/image-juste-prix/${selectImg}" alt="image">`
 }
-
-getRandomImg()
